@@ -62,13 +62,13 @@ public class SoundBounce : MonoBehaviour {
         if (delay > maxDelay)
             yield break;
 
-        StartCoroutine(SimulateEcho(transform.position, hit.point, delay));
+        StartCoroutine(SimulateEcho(transform.position, hit.point, delay, hit.collider));
         
         yield return new WaitForSeconds(delay);
         emitter.Play();
     }
 
-    private IEnumerator SimulateEcho(Vector3 from, Vector3 to, float duration) {
+    private IEnumerator SimulateEcho(Vector3 @from, Vector3 to, float duration, Collider hitThing) {
         var simulation = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
         simulation.position = from;
 
@@ -93,6 +93,10 @@ public class SoundBounce : MonoBehaviour {
 
         startTime = endTime;
         endTime += durationOver;
+
+        var rend = hitThing.GetComponent<MeshRenderer>();
+        if (rend)
+            simulation.GetComponent<MeshRenderer>().sharedMaterial = rend.sharedMaterial;
 
         do {
             yield return null;
