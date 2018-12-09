@@ -8,7 +8,7 @@ public class SoundBounce : MonoBehaviour {
 
     public float distanceToDelay = 1.5f;
     public float minDelay = .5f;
-    public float maxDelay = 1f;
+    public float maxDelay = 5f;
     
     public StudioEventEmitter emitter;
     public List<SurfaceTypeToEmitter> emittersForSurfaces;
@@ -59,6 +59,8 @@ public class SoundBounce : MonoBehaviour {
 
     private IEnumerator PlayEcho(StudioEventEmitter emitter, RaycastHit hit) {
         var delay = CalculateDelay(hit);
+        if (delay > maxDelay)
+            yield break;
 
         StartCoroutine(SimulateEcho(transform.position, hit.point, delay));
         
@@ -106,7 +108,13 @@ public class SoundBounce : MonoBehaviour {
     private float CalculateDelay(RaycastHit hit) {
         var distance = hit.distance;
 
-        return Mathf.Clamp(distance * distanceToDelay, minDelay, maxDelay);
+        var value = distance * distanceToDelay;
+
+        var delay = value;
+        if (delay < minDelay)
+            delay = minDelay;
+        
+        return delay;
     }
 }
 

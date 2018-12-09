@@ -399,6 +399,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 006bd3b7267cee046b313c5675d15988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceToDelay: 0.1
+  minDelay: 0.2
+  maxDelay: 2
   emitter: {fileID: 1726065692}
   emittersForSurfaces:
   - type: 0
@@ -436,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Player/Steps/Wood
+  Event: event:/SFX/Ekko
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -784,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Player/Steps/Wood
+  Event: event:/SFX/Ekko
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -1016,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Player/Steps/Wood
+  Event: event:/SFX/Ping
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -1288,7 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Player/Steps/Wood
+  Event: event:/SFX/Ekko
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
