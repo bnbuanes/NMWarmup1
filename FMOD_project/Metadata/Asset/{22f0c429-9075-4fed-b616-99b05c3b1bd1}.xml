@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{22f0c429-9075-4fed-b616-99b05c3b1bd1}">
+        <property name="assetPath">
+            <value>Player/Steps/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7f325002-6599-4ab9-9273-c344b5285431}</destination>
+        </relationship>
+    </object>
+</objects>
