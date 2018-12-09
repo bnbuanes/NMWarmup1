@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114109301695694648}
-  - {fileID: 114173975243334676}
-  - {fileID: 114743106553460116}
-  - {fileID: 114033536532865826}
-  - {fileID: 114034655261349328}
-  - {fileID: 114844037038562514}
+  - {fileID: 114011960456767048}
+  - {fileID: 114596901366450754}
+  - {fileID: 114449883292633646}
+  - {fileID: 114167928791896600}
+  - {fileID: 114754479005096840}
   EditorEvents:
   - {fileID: 114330179860826486}
   - {fileID: 114104864250323606}
@@ -27,10 +27,30 @@ MonoBehaviour:
   - {fileID: 114605548301573064}
   MasterBanks:
   - {fileID: 114033536532865826}
+  - {fileID: 114754479005096840}
   StringsBanks:
   - {fileID: 114109301695694648}
-  stringsBankWriteTime: 636799675147476653
+  stringsBankWriteTime: 636799663600322480
   cacheVersion: 3
+--- !u!114 &114011960456767048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Ambience.bank
+  lastModified: 636799663600312509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 450
+  Exists: 1
 --- !u!114 &114033536532865826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,7 +69,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 12474
-  Exists: 1
+  Exists: 0
 --- !u!114 &114034655261349328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,15 +104,15 @@ MonoBehaviour:
   Path: event:/SFX/Ping
   guid: cd6409d9fa9abc48be5814c36a5c2fba
   Banks:
-  - {fileID: 114743106553460116}
-  - {fileID: 114034655261349328}
+  - {fileID: 114596901366450754}
+  - {fileID: 114167928791896600}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 70
+  Length: 5581
 --- !u!114 &114109301695694648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,11 +126,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD_project\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636799675147476653
+  lastModified: 636799663600322480
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1074
+  Exists: 1
+--- !u!114 &114167928791896600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\SFX.bank
+  lastModified: 636799701133374424
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 77728
   Exists: 1
 --- !u!114 &114173975243334676
 MonoBehaviour:
@@ -131,6 +170,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 450
   Exists: 1
+--- !u!114 &114187508342000010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GoodBad
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114228305275975228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +217,7 @@ MonoBehaviour:
   Path: event:/Player/Steps/Wood
   guid: fa92207c16824b41a26d549a1187109a
   Banks:
-  - {fileID: 114743106553460116}
+  - {fileID: 114596901366450754}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -186,6 +241,25 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114449883292633646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Musikk.bank
+  lastModified: 636799663600372349
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 880768
+  Exists: 1
 --- !u!114 &114503599847255388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,15 +275,34 @@ MonoBehaviour:
   Path: event:/SFX/Ekko
   guid: 6b04d288fb48e144b07332e63f9f8132
   Banks:
-  - {fileID: 114034655261349328}
+  - {fileID: 114167928791896600}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114228305275975228}
+  - {fileID: 114187508342000010}
   MinDistance: 1
   MaxDistance: 20
-  Length: 78
+  Length: 5218
+--- !u!114 &114596901366450754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Player.bank
+  lastModified: 636799701133354454
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 98944
+  Exists: 1
 --- !u!114 &114605548301573064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +318,7 @@ MonoBehaviour:
   Path: event:/Player/Steps
   guid: e5a71d04fd7bcd428fa8bfccfb6ea588
   Banks:
-  - {fileID: 114743106553460116}
+  - {fileID: 114596901366450754}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -233,6 +326,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 111
+--- !u!114 &114621868315014298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114692435966257492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,12 +357,12 @@ MonoBehaviour:
   Path: event:/Musikk
   guid: 605225c1aa584a4d83c7322e9c397fe0
   Banks:
-  - {fileID: 114844037038562514}
+  - {fileID: 114449883292633646}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114357036014443040}
+  - {fileID: 114621868315014298}
   MinDistance: 1
   MaxDistance: 20
   Length: 75500
@@ -275,6 +384,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 62976
+  Exists: 1
+--- !u!114 &114754479005096840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Master Bank.bank
+  lastModified: 636799663600312509
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
   Exists: 1
 --- !u!114 &114844037038562514
 MonoBehaviour:
