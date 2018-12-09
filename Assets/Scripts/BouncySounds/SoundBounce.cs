@@ -9,6 +9,7 @@ public class SoundBounce : MonoBehaviour {
     public float distanceToDelay = 1.5f;
     public float minDelay = .5f;
     public float maxDelay = 5f;
+    public float soundDurationAfterReturn = .5f;
     
     public StudioEventEmitter emitter;
     public List<SurfaceTypeToEmitter> emittersForSurfaces;
@@ -109,7 +110,7 @@ public class SoundBounce : MonoBehaviour {
         simEmitter.EventInstance.getVolume(out var volume, out var finalvolume);
 
         startTime = endTime;
-        endTime += .5f;
+        endTime += soundDurationAfterReturn;
         do {
             yield return null;
 

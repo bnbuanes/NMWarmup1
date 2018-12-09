@@ -261,6 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751cefa6a179bc24d8fb394964c0ed37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 7
+  stepDistance: 1.5
   horBase: {fileID: 8971129246194415324}
   verBase: {fileID: 8971129246193607429}
   stepEmitter: {fileID: 8971129246861412499}
@@ -670,6 +672,11 @@ PrefabInstance:
     - target: {fileID: 5938781869670020342, guid: 2e75f21a471e36f488a0deaee684ad57,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666641679503443442, guid: 2e75f21a471e36f488a0deaee684ad57,
+        type: 3}
+      propertyPath: soundDurationAfterReturn
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

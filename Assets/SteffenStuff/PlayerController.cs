@@ -8,70 +8,61 @@ public class PlayerController : MonoBehaviour {
     Vector2 mouseInput { get { return new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")); } }
 
     Rigidbody rb { get { return GetComponent<Rigidbody>(); } }
-    float walkSpeed = 3;
+    
+    public float walkSpeed = 3;
+    public float stepDistance = 1f;
 
     public Transform horBase, verBase;
+
+    public StudioEventEmitter stepEmitter;
+    public StudioEventEmitter dedEmitter;
 
     float verX = 0;
     private bool walking;
 
+    private Vector3 lastStepPosition;
+
     private void Start() {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        lastStepPosition = transform.position;
+        lastStepPosition.y = 0f;
     }
 
     private void FixedUpdate() {
         rb.velocity = horBase.right * input.x * walkSpeed + horBase.forward * walkSpeed * input.y + transform.up * rb.velocity.y;
-
-        if (rb.velocity.magnitude > 0.1f && !walking)
-            StartCoroutine(PlayWalkSound());
-        else if (rb.velocity.magnitude < 0.1f) {
-            walking = false;
-            StopAllCoroutines();
-        }
     }
 
     private void Update() {
-
         horBase.Rotate(Vector3.up, mouseInput.x);
-        //verBase.Rotate(Vector3.right, -mouseInput.y);
 
         verX -= mouseInput.y;
         verX = Mathf.Clamp(verX, -90, 90);
 
         verBase.localRotation = Quaternion.Euler(verX, 0, 0);
 
-        if(Input.GetKeyDown(KeyCode.P))
-            GetComponent<StudioEventEmitter>().Play();
-
-        /*
-        float x = verBase.localRotation.eulerAngles.x;
-
-        if (x > 0 && x < 90 && mouseInput.y < 0)
-            verBase.Rotate(Vector3.right, -mouseInput.y);
-
-        if (x < 360 && x > 270 && mouseInput.y > 0)
-            verBase.Rotate(Vector3.right, -mouseInput.y);
-            */
-
-        //verBase.rotation.eulerAngles.x = Mathf.Clamp(verBase.rotation.eulerAngles.x, -90, 90);
-
-
-
+        Footsteps();
     }
 
-    IEnumerator PlayWalkSound() {
-        walking = true;
-        while (true) {
+    private void Footsteps() {
+        var position = transform.position;
+        position.y = 0f;
 
-            GetComponent<StudioEventEmitter>().Play();
-            yield return new WaitForSeconds(1);
+        var distance = Vector3.Distance(position, lastStepPosition);
+        
+        
+        
+        if (distance > stepDistance) {
+            stepEmitter.Play();
+
+            lastStepPosition = lastStepPosition + ((position - lastStepPosition).normalized * stepDistance);
         }
     }
 
     public void Kill() {
         Destroy(this);
+        dedEmitter.Play();
         FindObjectOfType<DedCanvas>().Enable();
-
     }
 }
