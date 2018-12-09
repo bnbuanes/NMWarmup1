@@ -1,0 +1,6 @@
+{7c2092fa-8216-414b-a26d-549a1187109a} event:/Noenoe
+{d74878e1-03ff-4be5-a293-7ff066e4752e} bus:/
+{e450dbf2-1165-438b-b28d-ab04f711882b} bus:/Reverb
+{f4b5d54a-39fe-4ebf-82c2-b0490a7f5d14} bank:/Master Bank
+{53af1a9c-5679-479d-b128-d45dbaa910ac} bank:/Player
+{28c1d96a-195c-4d0a-8f44-33d307697a01} bank:/Ambience
