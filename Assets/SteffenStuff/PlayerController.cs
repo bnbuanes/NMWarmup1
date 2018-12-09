@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour {
 
     public Transform horBase, verBase;
 
+    private void Start() {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void FixedUpdate() {
         rb.velocity = horBase.right * input.x * walkSpeed + horBase.forward * walkSpeed * input.y + transform.up * rb.velocity.y;
 

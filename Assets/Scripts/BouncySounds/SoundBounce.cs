@@ -28,7 +28,7 @@ public class SoundBounce : MonoBehaviour {
     private void BounceSound() {
         emitter.Play();
 
-        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit)) {
+        if (Physics.Raycast(cam.ViewportPointToRay(new Vector3(.5f, .5f)), out var hit)) {
             var surface = hit.collider.GetComponent<Surface>();
             if (surface != null) {
                 switch (surface) {
@@ -99,7 +99,7 @@ public class SoundBounce : MonoBehaviour {
 
             lerpVal = (Time.time - startTime) / (endTime - startTime);
             
-            simulation.position = Vector3.Lerp(to, from, lerpVal);
+            simulation.position = Vector3.Lerp(to, transform.position, lerpVal);
             
         } while (lerpVal < 1f);
         
