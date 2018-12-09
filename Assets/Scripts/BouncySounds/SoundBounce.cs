@@ -16,7 +16,7 @@ public class SoundBounce : MonoBehaviour {
     private Camera cam;
 
     private void Start() {
-        cam = GetComponent<Camera>();
+        cam = Camera.main;
     }
 
     void Update() {
@@ -74,6 +74,7 @@ public class SoundBounce : MonoBehaviour {
 
         simulation.transform.localScale = Vector3.one * .5f;
         simulation.GetComponent<MeshRenderer>().material.color = Color.red;
+        Destroy(simulation.GetComponent<Collider>());
 
         var durationOver = duration / 2f;
         var startTime = Time.time;
