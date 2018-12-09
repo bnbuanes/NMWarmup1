@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     Vector2 input { get { return new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); } }
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
 
         lastStepPosition = transform.position;
-        lastStepPosition.y = 0f;
     }
 
     private void FixedUpdate() {
@@ -43,15 +43,19 @@ public class PlayerController : MonoBehaviour {
         verBase.localRotation = Quaternion.Euler(verX, 0, 0);
 
         Footsteps();
+
+        if (Input.GetKeyDown(KeyCode.R))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void Footsteps() {
+        var grounded = Physics.Raycast(transform.position, Vector3.down, 1.5f);
+        if (!grounded)
+            return;
+        
         var position = transform.position;
-        position.y = 0f;
 
         var distance = Vector3.Distance(position, lastStepPosition);
-        
-        
         
         if (distance > stepDistance) {
             stepEmitter.Play();
