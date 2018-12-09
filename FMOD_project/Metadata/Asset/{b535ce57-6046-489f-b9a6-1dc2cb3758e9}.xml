@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{b535ce57-6046-489f-b9a6-1dc2cb3758e9}">
+        <property name="assetPath">
+            <value>Player/Ping+ekko/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7f325002-6599-4ab9-9273-c344b5285431}</destination>
+        </relationship>
+    </object>
+</objects>
