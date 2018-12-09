@@ -25,11 +25,8 @@ public class SoundBounce : MonoBehaviour {
         emitter.Play();
 
         if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out var hit)) {
-            var surface = hit.collider.GetComponent<Surface>();
+            var surface = hit.collider.GetComponent<Surface_Type>();
             if (surface != null) {
-                
-                Debug.Log(surface.surfaceType);
-                
                 foreach (var emForSur in emittersForSurfaces) {
                     if (emForSur.type == surface.surfaceType) {
                         
