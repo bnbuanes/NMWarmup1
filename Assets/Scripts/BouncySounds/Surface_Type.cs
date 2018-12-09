@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class Surface_Type : MonoBehaviour {
+﻿public class Surface_Type : Surface {
 
     public SurfaceType surfaceType;
 

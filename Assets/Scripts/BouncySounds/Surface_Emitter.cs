@@ -1,7 +1,6 @@
 ﻿using FMODUnity;
-using UnityEngine;
 
-public class Surface_Emitter : MonoBehaviour {
+public class Surface_Emitter : Surface {
     
     public StudioEventEmitter emitter;
     

@@ -91,6 +91,7 @@
         <e p="Scripts" t="Include">
           <e p="BouncySounds" t="Include">
             <e p="SoundBounce.cs" t="Include" />
+            <e p="Surface.cs" t="Include" />
             <e p="Surface_Emitter.cs" t="Include" />
             <e p="Surface_Type.cs" t="Include" />
             <e p="SurfaceType.cs" t="Include" />
