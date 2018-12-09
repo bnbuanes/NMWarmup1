@@ -60,11 +60,14 @@ MonoBehaviour:
     Value: 256
   - Platform: 2
     Value: 32
-  Plugins: []
+  Plugins:
+  - 
   MasterBanks:
+  - Master Bank
   - Master Bank
   Banks:
   - Ambience
   - Player
-  - SFX
   - Musikk
+  - SFX
+  - Master Bank

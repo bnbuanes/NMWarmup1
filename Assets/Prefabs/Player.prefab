@@ -262,7 +262,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 7
+  strafeSpeed: 3
   stepDistance: 1.5
+  jumpForce: 10
+  accelSpeed: 25
   horBase: {fileID: 8971129246194415324}
   verBase: {fileID: 8971129246193607429}
   stepEmitter: {fileID: 8971129246861412499}
@@ -577,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1100958224, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
+      propertyPath: cursorCanvas
+      value: 
+      objectReference: {fileID: 4100894368147558167}
     - target: {fileID: 5013240968011933084, guid: 1ad58e627f0aca84981dc3104c9249e7,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -587,10 +594,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1100958224, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
-      propertyPath: cursorCanvas
-      value: 
-      objectReference: {fileID: 4100894368147558167}
     - target: {fileID: 1563717348, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
