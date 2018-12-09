@@ -12,29 +12,30 @@
     <session id="-2018636855">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="1" />
+          <entry key="cs" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="1" />
+          <entry key="C#" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="11" />
+          <entry key="cs" value="1055" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="11" />
+          <entry key="C#" value="1055" />
         </counts>
       </usages-collector>
     </session>
@@ -42,40 +43,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/GoogleVR/Scripts/Audio/FmodGvrAudio.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SoundBounce.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="43" column="87" lean-forward="true" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="87" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <marker date="1543318364000" expanded="true" signature="0:608" ph="/* Copyright 2016 Google Inc. All rights reserved. ... */" />
-                <marker date="1543318364000" expanded="false" signature="616:757" ph="..." />
-                <marker date="1543318364000" expanded="true" signature="759:970" ph="/// This is the main GVR audio class that communicates with the FMOD Unity integration. Native ... " />
-                <marker date="1543318364000" expanded="true" signature="1004:11137" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="1008:1152" ph="/// Updates the room effects of the environment with given |room| properties. ... " />
-                <marker date="1543318364000" expanded="true" signature="1231:2290" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="1292:1381" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="1334:1375" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="1514:2088" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="2441:3249" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="3925:5471" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="4786:4896" ph="/* User defined uniform scaling factor for reflectivity. This parameter has no effect when set ... */" />
-                <marker date="1543318364000" expanded="true" signature="5063:5222" ph="/* Parameter which allows the reverberation time across all frequency bands to be increased or ... */" />
-                <marker date="1543318364000" expanded="true" signature="5257:5432" ph="/* Parameter which allows the ratio of high frequncy reverb components to low frequency reverb ... */" />
-                <marker date="1543318364000" expanded="true" signature="5558:5696" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="5568:5692" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="5609:5657" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="5851:5897" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="6083:6539" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="6656:6888" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="6686:6807" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="7013:8280" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="8380:10136" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="8707:10040" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="8995:10034" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="9480:10026" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="9628:10016" ph="{...}" />
-                <marker date="1543318364000" expanded="true" signature="9963:10004" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="6:109" ph="..." />
+                <marker date="1544359231420" expanded="true" signature="152:1125" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="308:353" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="373:460" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="416:454" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="493:968" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="605:962" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="696:952" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="760:938" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="824:920" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="1047:1123" ph="{...}" />
+                <marker date="1544359231420" expanded="true" signature="1177:1248" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SurfaceType.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <folding>
+                <marker date="1544358969876" expanded="true" signature="24:58" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/Surface.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding>
+                <marker date="1544358980734" expanded="true" signature="57:98" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8A2D1A7-A78B-4CB1-9BDB-12BB401DC05A/f6/049c0bbb/Physics.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5695">
+              <caret line="335" column="4" selection-start-line="335" selection-start-column="4" selection-end-line="335" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/00/518ee44f/Camera.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13209">
+              <caret line="777" column="32" selection-start-line="777" selection-start-column="32" selection-end-line="777" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -84,11 +111,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GoogleVR/Scripts/Audio/FmodGvrAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/Surface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8A2D1A7-A78B-4CB1-9BDB-12BB401DC05A/f6/049c0bbb/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SoundBounce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/00/518ee44f/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SurfaceType.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/GoogleVR/Scripts/Audio/FmodGvrAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundBounce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BouncySounds/SurfaceType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BouncySounds/Surface.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BouncySounds/SoundBounce.cs" />
       </list>
     </option>
   </component>
@@ -102,6 +138,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="PreJam1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -115,18 +163,6 @@
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="PreJam1" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,11 +207,13 @@
       <updated>1544357889746</updated>
       <workItem from="1544357893826" duration="174000" />
       <workItem from="1544358086747" duration="105000" />
+      <workItem from="1544358212959" duration="665000" />
+      <workItem from="1544358897059" duration="336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279000" />
+    <option name="totallyTimeSpent" value="1280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -190,7 +228,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -228,37 +266,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/GoogleVR/Scripts/Audio/FmodGvrAudio.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="43" column="87" lean-forward="true" selection-start-line="43" selection-start-column="87" selection-end-line="43" selection-end-column="87" />
+        <state relative-caret-position="238">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8A2D1A7-A78B-4CB1-9BDB-12BB401DC05A/f6/049c0bbb/Physics.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5695">
+          <caret line="335" column="4" selection-start-line="335" selection-start-column="4" selection-end-line="335" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/00/518ee44f/Camera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13209">
+          <caret line="777" column="32" selection-start-line="777" selection-start-column="32" selection-end-line="777" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SurfaceType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <marker date="1543318364000" expanded="true" signature="0:608" ph="/* Copyright 2016 Google Inc. All rights reserved. ... */" />
-            <marker date="1543318364000" expanded="false" signature="616:757" ph="..." />
-            <marker date="1543318364000" expanded="true" signature="759:970" ph="/// This is the main GVR audio class that communicates with the FMOD Unity integration. Native ... " />
-            <marker date="1543318364000" expanded="true" signature="1004:11137" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="1008:1152" ph="/// Updates the room effects of the environment with given |room| properties. ... " />
-            <marker date="1543318364000" expanded="true" signature="1231:2290" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="1292:1381" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="1334:1375" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="1514:2088" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="2441:3249" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="3925:5471" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="4786:4896" ph="/* User defined uniform scaling factor for reflectivity. This parameter has no effect when set ... */" />
-            <marker date="1543318364000" expanded="true" signature="5063:5222" ph="/* Parameter which allows the reverberation time across all frequency bands to be increased or ... */" />
-            <marker date="1543318364000" expanded="true" signature="5257:5432" ph="/* Parameter which allows the ratio of high frequncy reverb components to low frequency reverb ... */" />
-            <marker date="1543318364000" expanded="true" signature="5558:5696" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="5568:5692" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="5609:5657" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="5851:5897" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="6083:6539" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="6656:6888" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="6686:6807" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="7013:8280" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="8380:10136" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="8707:10040" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="8995:10034" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="9480:10026" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="9628:10016" ph="{...}" />
-            <marker date="1543318364000" expanded="true" signature="9963:10004" ph="{...}" />
+            <marker date="1544358969876" expanded="true" signature="24:58" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/Surface.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1544358980734" expanded="true" signature="57:98" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BouncySounds/SoundBounce.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1544359231420" expanded="true" signature="6:109" ph="..." />
+            <marker date="1544359231420" expanded="true" signature="152:1125" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="308:353" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="373:460" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="416:454" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="493:968" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="605:962" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="696:952" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="760:938" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="824:920" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="1047:1123" ph="{...}" />
+            <marker date="1544359231420" expanded="true" signature="1177:1248" ph="{...}" />
           </folding>
         </state>
       </provider>

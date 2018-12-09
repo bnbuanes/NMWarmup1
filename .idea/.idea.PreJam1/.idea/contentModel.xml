@@ -89,8 +89,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BouncySounds" t="Include">
+            <e p="SoundBounce.cs" t="Include" />
+            <e p="Surface.cs" t="Include" />
+            <e p="SurfaceType.cs" t="Include" />
+          </e>
           <e p="SimpleCameraController.cs" t="Include" />
-          <e p="SoundBounce.cs" t="Include" />
         </e>
         <e p="SteffenStuff" t="Include">
           <e p="PlayerController.cs" t="Include" />
