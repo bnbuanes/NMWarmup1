@@ -6,6 +6,8 @@ public class DangerZone : MonoBehaviour {
         var col = GetComponent<Collider>();
         if(col == null)
             col = gameObject.AddComponent<BoxCollider>();
+        if (col is MeshCollider meshCollider)
+            meshCollider.convex = true;
 
         if (!col.isTrigger)
             col.isTrigger = true;

@@ -25,12 +25,13 @@ MonoBehaviour:
   - {fileID: 114503599847255388}
   - {fileID: 114692435966257492}
   - {fileID: 114605548301573064}
+  - {fileID: 114233439456827536}
   MasterBanks:
   - {fileID: 114033536532865826}
   - {fileID: 114754479005096840}
   StringsBanks:
   - {fileID: 114109301695694648}
-  stringsBankWriteTime: 636799675147476653
+  stringsBankWriteTime: 636799764703646694
   cacheVersion: 3
 --- !u!114 &114011960456767048
 MonoBehaviour:
@@ -123,8 +124,8 @@ MonoBehaviour:
   Path: event:/SFX/Ping
   guid: cd6409d9fa9abc48be5814c36a5c2fba
   Banks:
-  - {fileID: 114257067846093642}
   - {fileID: 114013072340634010}
+  - {fileID: 114257067846093642}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -145,11 +146,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD_project\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636799675147476653
+  lastModified: 636799764703646694
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 1122
   Exists: 1
 --- !u!114 &114167928791896600
 MonoBehaviour:
@@ -240,6 +241,29 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114233439456827536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Death
+  guid: 9bde820a6fb1644287029edbaabb31d7
+  Banks:
+  - {fileID: 114257067846093642}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 561
 --- !u!114 &114257067846093642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,11 +277,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Stuff\workspace\PreJam1\FMOD_project\Build\Desktop\Player.bank
-  lastModified: 636799753283980493
+  lastModified: 636799764703666679
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 102528
+    Value: 113536
   Exists: 1
 --- !u!114 &114330179860826486
 MonoBehaviour:

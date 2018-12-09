@@ -9,5 +9,6 @@ public class DedCanvas : MonoBehaviour {
         cursorCanvas.SetActive(false);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+        Destroy(FindObjectOfType<SoundBounce>().gameObject);
     }
 }

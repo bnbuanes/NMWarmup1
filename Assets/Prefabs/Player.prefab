@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 8971129246861412502}
   - component: {fileID: 8971129246861412505}
   - component: {fileID: 8971129246861412499}
+  - component: {fileID: 2329844481203912412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -262,6 +263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horBase: {fileID: 8971129246194415324}
   verBase: {fileID: 8971129246193607429}
+  stepEmitter: {fileID: 8971129246861412499}
+  dedEmitter: {fileID: 2329844481203912412}
 --- !u!54 &8971129246861412505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -291,6 +294,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: event:/Player/Steps
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2329844481203912412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971129246861412504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Player/Death
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -549,10 +575,28 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5013240968011933084, guid: 1ad58e627f0aca84981dc3104c9249e7,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5013240968011933084, guid: 1ad58e627f0aca84981dc3104c9249e7,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1100958224, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
       propertyPath: cursorCanvas
       value: 
       objectReference: {fileID: 4100894368147558167}
+    - target: {fileID: 1563717348, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563717348, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad58e627f0aca84981dc3104c9249e7, type: 3}
 --- !u!224 &1819998324762577005 stripped
@@ -626,11 +670,6 @@ PrefabInstance:
     - target: {fileID: 5938781869670020342, guid: 2e75f21a471e36f488a0deaee684ad57,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8514386576179479372, guid: 2e75f21a471e36f488a0deaee684ad57,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

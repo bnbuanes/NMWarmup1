@@ -45,30 +45,26 @@ public class SoundBounce : MonoBehaviour {
     }
 
     private void HandleHitSurfaceEmitter(Surface_Emitter surfaceEmitter, RaycastHit hit) {
-        StartCoroutine(PlayEcho(surfaceEmitter.emitter, hit));
+        StartCoroutine(PlayEcho(surfaceEmitter.emitter.Event, hit));
     }
 
     private void HandleHitSurfaceType(Surface_Type surface, RaycastHit hit) {
         foreach (var emForSur in emittersForSurfaces) {
             if (emForSur.type == surface.surfaceType) {
-
-                StartCoroutine(PlayEcho(emForSur.emitter, hit));
+                StartCoroutine(PlayEcho(emForSur.emitter.Event, hit));
             }
         }
     }
 
-    private IEnumerator PlayEcho(StudioEventEmitter emitter, RaycastHit hit) {
+    private IEnumerator PlayEcho(string Event, RaycastHit hit) {
         var delay = CalculateDelay(hit);
         if (delay > maxDelay)
             yield break;
     
-        StartCoroutine(SimulateEcho(transform.position, hit.point, delay, hit.collider));
-        
-        // yield return new WaitForSeconds(delay);
-        // emitter.Play();
+        StartCoroutine(SimulateEcho(transform.position, hit.point, delay, hit.collider, Event));
     }
 
-    private IEnumerator SimulateEcho(Vector3 from, Vector3 to, float duration, Collider hitThing) {
+    private IEnumerator SimulateEcho(Vector3 @from, Vector3 to, float duration, Collider hitThing, string Event) {
         var simulation = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
         simulation.position = from;
 
@@ -76,7 +72,7 @@ public class SoundBounce : MonoBehaviour {
         simulation.GetComponent<MeshRenderer>().material.color = Color.red;
         Destroy(simulation.GetComponent<Collider>());
         var simEmitter = simulation.gameObject.AddComponent<StudioEventEmitter>();
-        simEmitter.Event = emitter.Event;
+        simEmitter.Event = Event;
         simEmitter.Play();
 
         var durationOver = duration / 2f;
