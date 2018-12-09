@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{1d80f84b-328c-4671-83f3-332f86014171}">
+        <property name="assetPath">
+            <value>Player/Steps/Metal/steps_01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.11151927437641723</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7f325002-6599-4ab9-9273-c344b5285431}</destination>
+        </relationship>
+    </object>
+</objects>
