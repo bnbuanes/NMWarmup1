@@ -24,11 +24,12 @@ MonoBehaviour:
   - {fileID: 114104864250323606}
   - {fileID: 114503599847255388}
   - {fileID: 114692435966257492}
+  - {fileID: 114605548301573064}
   MasterBanks:
   - {fileID: 114033536532865826}
   StringsBanks:
   - {fileID: 114109301695694648}
-  stringsBankWriteTime: 636799659202120152
+  stringsBankWriteTime: 636799675147476653
   cacheVersion: 3
 --- !u!114 &114033536532865826
 MonoBehaviour:
@@ -62,7 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Stuff\workspace\PreJam1\FMOD_project\Build\Desktop\SFX.bank
-  lastModified: 636799614205336471
+  lastModified: 636799675147556592
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -83,8 +84,8 @@ MonoBehaviour:
   Path: event:/SFX/Ping
   guid: cd6409d9fa9abc48be5814c36a5c2fba
   Banks:
-  - {fileID: 114034655261349328}
   - {fileID: 114743106553460116}
+  - {fileID: 114034655261349328}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -105,11 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD_project\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636799659202120152
+  lastModified: 636799675147476653
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1032
+    Value: 1074
   Exists: 1
 --- !u!114 &114173975243334676
 MonoBehaviour:
@@ -130,6 +131,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 450
   Exists: 1
+--- !u!114 &114228305275975228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GoodBad
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114330179860826486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,10 +206,33 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114932243813810572}
+  - {fileID: 114228305275975228}
   MinDistance: 1
   MaxDistance: 20
   Length: 78
+--- !u!114 &114605548301573064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Steps
+  guid: e5a71d04fd7bcd428fa8bfccfb6ea588
+  Banks:
+  - {fileID: 114743106553460116}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 111
 --- !u!114 &114692435966257492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,11 +270,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Stuff\workspace\PreJam1\FMOD_project\Build\Desktop\Player.bank
-  lastModified: 636799659202200089
+  lastModified: 636799675147516623
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 43712
+    Value: 62976
   Exists: 1
 --- !u!114 &114844037038562514
 MonoBehaviour:
