@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class PlayerController : MonoBehaviour {
     Vector2 input { get { return new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); } }
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public Transform horBase, verBase;
 
     float verX = 0;
+    private bool walking;
 
     private void Start() {
         Cursor.visible = false;
@@ -21,17 +23,26 @@ public class PlayerController : MonoBehaviour {
     private void FixedUpdate() {
         rb.velocity = horBase.right * input.x * walkSpeed + horBase.forward * walkSpeed * input.y + transform.up * rb.velocity.y;
 
+        if (rb.velocity.magnitude > 0.1f && !walking)
+            StartCoroutine(PlayWalkSound());
+        else if (rb.velocity.magnitude < 0.1f) {
+            walking = false;
+            StopAllCoroutines();
+        }
     }
 
     private void Update() {
 
         horBase.Rotate(Vector3.up, mouseInput.x);
-        verBase.Rotate(Vector3.right, -mouseInput.y);
+        //verBase.Rotate(Vector3.right, -mouseInput.y);
 
         verX -= mouseInput.y;
         verX = Mathf.Clamp(verX, -90, 90);
 
-        verBase.rotation = Quaternion.Euler(verX, 0, 0);
+        verBase.localRotation = Quaternion.Euler(verX, 0, 0);
+
+        if(Input.GetKeyDown(KeyCode.P))
+            GetComponent<StudioEventEmitter>().Play();
 
         /*
         float x = verBase.localRotation.eulerAngles.x;
@@ -47,5 +58,14 @@ public class PlayerController : MonoBehaviour {
 
 
 
+    }
+
+    IEnumerator PlayWalkSound() {
+        walking = true;
+        while (true) {
+
+            GetComponent<StudioEventEmitter>().Play();
+            yield return new WaitForSeconds(1);
+        }
     }
 }
