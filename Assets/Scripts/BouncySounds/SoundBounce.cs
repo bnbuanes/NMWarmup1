@@ -88,6 +88,9 @@ public class SoundBounce : MonoBehaviour {
             lerpVal = (Time.time - startTime) / (endTime - startTime);
             
             simulation.position = Vector3.Lerp(from, to, lerpVal);
+            //steffen
+            emitter.transform.position = simulation.position;
+            //steffen
             
         } while (lerpVal < 1f);
 
@@ -104,9 +107,15 @@ public class SoundBounce : MonoBehaviour {
             lerpVal = (Time.time - startTime) / (endTime - startTime);
             
             simulation.position = Vector3.Lerp(to, transform.position, lerpVal);
-            
+            //steffen
+            emitter.transform.position = simulation.position;
+            //steffen
+
         } while (lerpVal < 1f);
-        
+
+        //steffen
+        emitter.Stop();
+        //steffen
         Destroy(simulation.gameObject);
     }
 
