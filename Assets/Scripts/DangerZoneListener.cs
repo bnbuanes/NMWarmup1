@@ -11,6 +11,10 @@ public class DangerZoneListener : MonoBehaviour {
     private readonly Collider[] cols = new Collider[10];
     private DangerZone dangerZone;
 
+    private void Start() {
+        dangerEmitter.transform.parent = null;
+    }
+
     private void Update() {
         var numHits = Physics.OverlapSphereNonAlloc(transform.position, 10f, cols, layermask);
         Debug.Log(numHits);
