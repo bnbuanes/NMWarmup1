@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour {
     public Transform horBase, verBase;
 
     private void FixedUpdate() {
-        rb.velocity = transform.right * input.x * walkSpeed + transform.forward * walkSpeed * input.y + transform.up * rb.velocity.y;
+        rb.velocity = horBase.right * input.x * walkSpeed + horBase.forward * walkSpeed * input.y + transform.up * rb.velocity.y;
+
+    }
+
+    private void Update() {
 
         horBase.Rotate(Vector3.up, mouseInput.x);
         verBase.Rotate(Vector3.right, -mouseInput.y);
