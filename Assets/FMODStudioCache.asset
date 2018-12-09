@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114109301695694648}
-  - {fileID: 114173975243334676}
-  - {fileID: 114743106553460116}
-  - {fileID: 114033536532865826}
+  - {fileID: 114844552045286934}
+  - {fileID: 114135490417421166}
+  - {fileID: 114434872533463504}
+  - {fileID: 114434869933596448}
   EditorEvents:
-  - {fileID: 114330179860826486}
+  - {fileID: 114108315007585096}
   MasterBanks:
-  - {fileID: 114033536532865826}
+  - {fileID: 114434869933596448}
   StringsBanks:
-  - {fileID: 114109301695694648}
-  stringsBankWriteTime: 636799591345561652
+  - {fileID: 114844552045286934}
+  stringsBankWriteTime: 636799599098650974
   cacheVersion: 3
 --- !u!114 &114033536532865826
 MonoBehaviour:
@@ -44,6 +44,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 12474
   Exists: 1
+--- !u!114 &114108315007585096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Steps/Wood
+  guid: fa92207c16824b41a26d549a1187109a
+  Banks:
+  - {fileID: 114434872533463504}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 631
 --- !u!114 &114109301695694648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +85,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 816
+  Exists: 1
+--- !u!114 &114135490417421166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Ambience.bank
+  lastModified: 636799599098650974
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 450
   Exists: 1
 --- !u!114 &114173975243334676
 MonoBehaviour:
@@ -105,6 +147,44 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 631
+--- !u!114 &114434869933596448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Master Bank.bank
+  lastModified: 636799599098650974
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12474
+  Exists: 1
+--- !u!114 &114434872533463504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: D:\GitHubRepositories\NMWarmup1\FMOD_project\Build\Desktop\Player.bank
+  lastModified: 636799599098661162
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 41376
+  Exists: 1
 --- !u!114 &114743106553460116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,4 +203,23 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 41376
+  Exists: 1
+--- !u!114 &114844552045286934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMOD_project\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636799599098650974
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 816
   Exists: 1
