@@ -68,4 +68,10 @@ public class PlayerController : MonoBehaviour {
             yield return new WaitForSeconds(1);
         }
     }
+
+    public void Kill() {
+        Destroy(this);
+        FindObjectOfType<DedCanvas>().Enable();
+
+    }
 }

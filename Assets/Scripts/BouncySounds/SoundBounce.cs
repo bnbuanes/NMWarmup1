@@ -26,7 +26,7 @@ public class SoundBounce : MonoBehaviour {
     }
 
     private void BounceSound() {
-        emitter.Play();
+        // emitter.Play();
 
         if (Physics.Raycast(cam.ViewportPointToRay(new Vector3(.5f, .5f)), out var hit)) {
             var surface = hit.collider.GetComponent<Surface>();
@@ -61,20 +61,23 @@ public class SoundBounce : MonoBehaviour {
         var delay = CalculateDelay(hit);
         if (delay > maxDelay)
             yield break;
-
+    
         StartCoroutine(SimulateEcho(transform.position, hit.point, delay, hit.collider));
         
-        yield return new WaitForSeconds(delay);
-        emitter.Play();
+        // yield return new WaitForSeconds(delay);
+        // emitter.Play();
     }
 
-    private IEnumerator SimulateEcho(Vector3 @from, Vector3 to, float duration, Collider hitThing) {
+    private IEnumerator SimulateEcho(Vector3 from, Vector3 to, float duration, Collider hitThing) {
         var simulation = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
         simulation.position = from;
 
         simulation.transform.localScale = Vector3.one * .5f;
         simulation.GetComponent<MeshRenderer>().material.color = Color.red;
         Destroy(simulation.GetComponent<Collider>());
+        var simEmitter = simulation.gameObject.AddComponent<StudioEventEmitter>();
+        simEmitter.Event = emitter.Event;
+        simEmitter.Play();
 
         var durationOver = duration / 2f;
         var startTime = Time.time;
@@ -88,10 +91,6 @@ public class SoundBounce : MonoBehaviour {
             lerpVal = (Time.time - startTime) / (endTime - startTime);
             
             simulation.position = Vector3.Lerp(from, to, lerpVal);
-            //steffen
-            emitter.transform.position = simulation.position;
-            //steffen
-            
         } while (lerpVal < 1f);
 
         startTime = endTime;
@@ -107,15 +106,23 @@ public class SoundBounce : MonoBehaviour {
             lerpVal = (Time.time - startTime) / (endTime - startTime);
             
             simulation.position = Vector3.Lerp(to, transform.position, lerpVal);
-            //steffen
-            emitter.transform.position = simulation.position;
-            //steffen
+        } while (lerpVal < 1f);
+        
+        simEmitter.gameObject.SetActive(false);
 
+        simEmitter.EventInstance.getVolume(out var volume, out var finalvolume);
+
+        startTime = endTime;
+        endTime += .5f;
+        do {
+            yield return null;
+
+            lerpVal = (Time.time - startTime) / (endTime - startTime);
+
+            simEmitter.EventInstance.setVolume(Mathf.Lerp(volume, 0f, lerpVal));
         } while (lerpVal < 1f);
 
-        //steffen
-        emitter.Stop();
-        //steffen
+        simEmitter.Stop();
         Destroy(simulation.gameObject);
     }
 
